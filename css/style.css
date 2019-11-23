@@ -1,0 +1,268 @@
+/* ここから下に記載していく */
+
+.container{
+    background: #fff;
+    width: 1366px;
+    margin: 0 auto;
+
+    color: #222222;
+    line-height: 26px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo{
+    padding-left: 50px;
+}
+
+header nav .menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+header nav .menu ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+header nav .menu ul li a{
+    text-decoration: none;
+    color: #222222;
+}
+
+header nav .menu ul li a:hover{
+    color: #fafafa;
+}
+
+header nav .menu ul li a:active{
+    color: #ffd61a;
+}
+
+.featured-img{
+    position: relative;
+}
+
+.featured-img .message{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.featured-img .message h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.featured-img .message p{
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+
+section{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+h1.section-header{
+    font-size: 24px;
+    padding-top: 60px;
+    font-weight: bolder;
+}
+
+h1.yellow{
+    color: #ffd61a;
+}
+
+section >h2{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+section p {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+section.about .about-images{
+    display:flex;
+    margin-top: 80px;
+}
+
+/* pタグに当てたら何故かレイアウトがおかしくなったのでimgに当てている */
+section.about .about-images img{
+    width: 100%;
+}
+
+section.course .course-details{
+    background: #fafafa;
+}
+
+section.course .course-details li{
+    display: flex;
+    align-items: center;
+}
+
+section.course .course-details li:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+section.course .course-details li:nth-child(even) .cource-message{
+    margin-right: 50px;
+}
+section.course .course-details li:nth-child(odd) .cource-message{
+    margin-left: 50px;
+}
+
+section.course .course-details li .course-img img{
+    vertical-align: bottom;
+}
+
+section.course .course-details li .course-img,
+section.course .course-details li .course-message{
+    width: 50%;
+}
+
+section.course .course-details li .cource-message{
+    width: 480px;
+    text-align: left;
+}
+
+section.course .cource-message h1{
+    font-size: 24px;
+    font-weight: bolder;
+}
+section.course .cource-message p{
+    margin-top:40px;
+}
+
+section.news .news-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section.news .news-card{
+    text-align: left;
+    width: 300px;
+}
+
+section.news .news-card:hover{
+    opacity: 0.5;
+}
+
+
+section.news .news-card .card-date p{
+    margin-top:30px;
+    margin-bottom:24px;
+}
+
+input.button{
+    box-shadow: none;
+    border: 0;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background: #ffd61a;
+    color: #fff;
+    font-size: 18px;
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+section.access {
+    background: #fafafa;
+}
+
+section.access table{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
+section.access table th{
+    width: 25%;
+    text-align: left;
+    height: 50px;
+}
+
+section.access table td{
+    text-align: left;
+}
+
+.google_map{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom:60px;
+}
+
+section.contact form{
+    width: 642px;
+    margin: 0 auto; 
+}
+
+section.contact form table{
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+section.contact form table th{
+    border: solid 1px #bfbfbf;
+    border-left-style:none;
+    height: 36px;
+    text-align: left;
+    width: 240px;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+section.contact form table td{
+    border: solid 1px #bfbfbf;
+    border-right-style:none;
+    text-align: left;
+    width: 400px;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+section.contact form table td input[type="text"],
+section.contact form table td input[type="email"],
+section.contact form table td textarea{
+    border: solid 1px #bfbfbf;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+footer{
+    background: #707070;
+    text-align: center;
+    margin-top: 140px;
+}
+
+footer p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
